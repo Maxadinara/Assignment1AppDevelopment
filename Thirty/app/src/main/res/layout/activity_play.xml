@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fatland.thirty.PlayActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/DisabledDice1"
+        android:id="@+id/dice1"
+        android:clickable="true"
+        android:onClick="dice1Disable"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/DisabledDice2"
+        android:id="@+id/dice2"
+        android:clickable="true"
+        android:onClick="dice2Disable"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/DisabledDice3"
+        android:id="@+id/dice3"
+        android:clickable="true"
+        android:onClick="dice3Disable"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dice1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/DisabledDice4"
+        android:id="@+id/dice4"
+        android:clickable="true"
+        android:onClick="dice4Disable"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dice2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/DisabledDice5"
+        android:id="@+id/dice5"
+        android:clickable="true"
+        android:onClick="dice5Disable"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinnerSelectAlternative"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chose_alternative"
+        android:layout_toRightOf="@+id/spinnerSelectAlternative"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="CheckAndSetSelected"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_dices"
+        android:layout_above="@id/spinnerSelectAlternative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="RollDices"/>
+
+</RelativeLayout>
